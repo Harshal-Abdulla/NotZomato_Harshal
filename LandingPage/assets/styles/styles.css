@@ -3,8 +3,16 @@
     padding: 0px;
     box-sizing: border-box;
     text-decoration: none;
+    border: none;
+
 }
 /* font family metropolis must be added for zomato */
+*:focus{
+    border: none; 
+    outline: none;
+}
+/*focus is whenever a item is clicked it is focus*/
+
 a{
     color:unset /*to unset*/
 }
@@ -44,3 +52,72 @@ nav div.nav-item {
     font-weight: 700;
 }
 
+header div.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 70%;
+    width: 80%;
+    margin: 0px auto;
+}
+
+header img.logo {
+    width: 300px;
+}
+
+header h1{
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+
+header div.search-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    width: 70%;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+header div.search-box i{
+    margin: 10px;
+}
+
+header div.search-box div.select i{
+    color: #F57082
+}
+
+header div.search-box{
+    overflow: hidden;
+}
+
+header div.search-box div.input{
+    color: #828282b7
+}
+
+header div.search-box div.seperator{
+    height:67%;
+    width: 2px;
+    border-radius: 30px;
+    background-color: #828282b7;
+}
+
+header div.search-box div.input{
+    flex-grow: 80;
+}
+/*this allows to make the containers 20-80 ratio for the sizing of the boxes*/
+header div.search-box div.input{
+    width: 100%;
+}
+/*this allows the input container to grow the width 100%*/
+div.search-box div{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin: 0px 50px;
+}
+/*this allows individual icon and iput in container to align center and beside each other, div.search-box div selects all the child divs*/
