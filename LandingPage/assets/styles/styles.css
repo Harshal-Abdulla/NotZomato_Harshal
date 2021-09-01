@@ -1,9 +1,19 @@
+@font-face {
+    font-family:metropolis ;
+    src: url(../fonts/Metropolis-Light.woff);
+}
+@font-face {
+    font-family: metrolight;
+    src: url(../fonts/Metropolis-Thin.woff);
+}
+
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     text-decoration: none;
     border: none;
+    font-family: metropolis;
 
 }
 /* font family metropolis must be added for zomato */
@@ -11,7 +21,8 @@
     border: none; 
     outline: none;
 }
-/*focus is whenever a item is clicked it is focus*/
+/*focus is whenever a item is clicked it is focus
+this allows to hide the outline and border so it in the * element also*/
 
 a{
     color:unset /*to unset*/
@@ -39,6 +50,7 @@ nav .nav-item{
 }
 
 nav div.container{
+    font-family: metrolight;
     display: flex;
     justify-content: space-around;
 }
@@ -91,9 +103,7 @@ header div.search-box div.select i{
     color: #F57082
 }
 
-header div.search-box{
-    overflow: hidden;
-}
+
 
 header div.search-box div.input{
     color: #828282b7
@@ -118,6 +128,18 @@ div.search-box div{
     display: flex;
     align-items: center;
     height: 50px;
-    margin: 0px 50px;
+    margin: 0px 5px;
 }
 /*this allows individual icon and iput in container to align center and beside each other, div.search-box div selects all the child divs*/
+header div.search-box div.input input {
+    align-self: center;
+    font-size: 1rem;
+    width: 100%;
+}
+/*this selects the text inside the respective container and align in it center with width and flex grow, for more flex property go to flex playground*/
+header div.search-box div.select select {
+    flex-grow: 1;
+    font-size: 1rem;
+    color: #757575;
+}
+/*this select the select box and the text inside it and chnage the font size and the flexgrow and the color*/
