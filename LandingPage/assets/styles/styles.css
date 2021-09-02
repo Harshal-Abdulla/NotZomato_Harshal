@@ -200,9 +200,19 @@ section.app div.container img{
     display: block;
 }
 
-section.app div.container div.radio{
-
-    width: 75%;
+section.app div.container div.form{
+    
+    max-width: 600px;
 }
     
-    
+section.app div.container div.form h1{
+    font-size: 3rem ;
+}
+section.app div.container div.form small{
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 100;
+    color: #393737;
+    margin: 20px 0px;
+
+}
