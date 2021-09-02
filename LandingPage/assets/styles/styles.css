@@ -216,3 +216,58 @@ section.app div.container div.form small{
     margin: 20px 0px;
 
 }
+
+/* radio button styles */
+
+/* input box */
+
+section.app div.input{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    
+
+}
+
+section.app div.input input{
+    flex-grow: 70;
+    border: 1px solid #CFCFCF;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    padding-left: 10px;
+    margin-right: 10px;
+    height: 90%;
+
+}
+section.app div.input button{
+    flex-grow: 30;
+    border: 1px solid rgb(237,90,107);
+    color: #fff;
+    background-color: rgb(237,90,107);
+    border-radius: 5px;
+    font-size: 1.2rem;
+    height: 90%;
+    cursor:pointer;
+    font-weight: 100;
+
+}
+section.app div.input button:hover{
+    background-color:  rgb(233, 50, 68);
+}
+
+section.app div.download{
+    margin: 20px 0px;
+    font-weight: 100;
+    color:grey;
+    
+}
+
+section.app div.download div img{
+    max-width: 150px;
+    display: inline-block;
+    padding-top: 15px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
