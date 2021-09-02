@@ -188,16 +188,24 @@ section.app{
 }
 
 section.app div.container{
-    width: 70%;
+
+    width: 100%;
     margin: 0px, auto;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 section.app div.container img{
     max-width: 300px;
     display: block;
+    /* the below is taken from the zomato site */
+    height: 100%;
+    object-fit: contain;
+    border-radius: inherit;
+    opacity: 1;
+    will-change: transform, opacity;
+    transition: opacity 0.25s ease 0s, transform 0.25s ease 0s;
 }
 
 section.app div.container div.form{
@@ -271,3 +279,59 @@ section.app div.download div img{
     cursor: pointer;
 }
 
+section.options div.container{
+    width: 90%;
+    margin: 30px auto;
+    
+}
+section.options div.container h2{
+    font-size: 2rem;
+    
+}
+section.options div.container h3{
+    font-size: 1.6rem;
+
+}
+section.options div.container div{
+
+    margin-top: 50px;
+
+}
+section.options div.container div.cuisines ul{
+
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+section.options div.container div.cuisines ul li{
+    color: grey;
+    margin: 3px 10px;
+    font-size: 1.1rem;
+    font-weight: 100;
+
+
+}
+section.options div.container div.restaurant ul{
+
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+section.options div.container div.restaurant ul li{
+
+    margin: 3px 10px;
+    font-size: 1.1rem;
+    font-weight: 100;
+    color: grey;
+
+}
+
+
+    
